@@ -1,4 +1,4 @@
-/****** Object:  Table [dbo].[contact_master]    Script Date: 1/15/2021 12:12:35 PM ******/
+/****** Object:  Table [dbo].[contact_master]    Script Date: 1/15/2021 12:25:50 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -7,7 +7,7 @@ GO
 
 CREATE TABLE [dbo].[contact_master](
 	[contact_id] [int] IDENTITY(1,1) NOT NULL,
-	[contact_type] [char](2) NULL,
+	[contact_counselor] [int] NULL,
 	[agency_id] [int] NOT NULL,
 	[first_name] [varchar](50) NOT NULL,
 	[last_name] [varchar](50) NOT NULL,

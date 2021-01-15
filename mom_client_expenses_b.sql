@@ -1,4 +1,4 @@
-/****** Object:  Table [dbo].[mom_client_expenses_b]    Script Date: 1/15/2021 12:16:37 PM ******/
+/****** Object:  Table [dbo].[mom_client_expenses_b]    Script Date: 1/15/2021 12:29:09 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -89,7 +89,9 @@ CREATE TABLE [dbo].[mom_client_expenses_b](
 	[ss_general] [float] NULL,
 	[ss_total] [float] NULL,
 	[dd_no_cc] [float] NULL,
+	[dd_cc_creditor_breakup] [varchar](max) NULL,
 	[dd_cc_breakup] [varchar](200) NULL,
+	[dd_cc_balance_breakup] [varchar](200) NULL,
 	[dd_cc_tot] [float] NULL,
 	[dd_equity_loan] [float] NULL,
 	[dd_personal_loan_1] [float] NULL,
@@ -110,7 +112,7 @@ CREATE TABLE [dbo].[mom_client_expenses_b](
 (
 	[client_id] ASC
 )WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 
 
